@@ -63,32 +63,32 @@ public class Controllers_Operaciones {
     }
     
     public void jbt_suma_actionPerformed(){
-        modelo_operaciones.setNumero1(Float.parseFloat(views_operaciones.jtf_numero1.getText()));
-        modelo_operaciones.setNumero2(Float.parseFloat(views_operaciones.jtf_numero2.getText()));
+        modelo_operaciones.setNumero1(datavalidation.string2Float(views_operaciones.jtf_numero1.getText()));
+        modelo_operaciones.setNumero2(datavalidation.string2Float(views_operaciones.jtf_numero2.getText()));
          modelo_operaciones.suma();
          views_operaciones.jtf_resultado.setText(String.valueOf(modelo_operaciones.getResultado()));
     }
       public void jbt_resta_actionPerformed(){
-        modelo_operaciones.setNumero1(datavalidation.string2Int(views_operaciones.jtf_numero1.getText()));
-        modelo_operaciones.setNumero2(Float.parseFloat(views_operaciones.jtf_numero2.getText()));
+        modelo_operaciones.setNumero1(datavalidation.string2Float(views_operaciones.jtf_numero1.getText()));
+        modelo_operaciones.setNumero2(datavalidation.string2Float(views_operaciones.jtf_numero2.getText()));
          modelo_operaciones.resta();
          views_operaciones.jtf_resultado.setText(String.valueOf(modelo_operaciones.getResultado()));
     }
         public void jbt_multiplicacion_actionPerformed(){
-        modelo_operaciones.setNumero1(Float.parseFloat(views_operaciones.jtf_numero1.getText()));
-        modelo_operaciones.setNumero2(Float.parseFloat(views_operaciones.jtf_numero2.getText()));
+        modelo_operaciones.setNumero1(datavalidation.string2Float(views_operaciones.jtf_numero1.getText()));
+        modelo_operaciones.setNumero2(datavalidation.string2Float(views_operaciones.jtf_numero2.getText()));
          modelo_operaciones.multiplicacion();
          views_operaciones.jtf_resultado.setText(String.valueOf(modelo_operaciones.getResultado()));
     }
           public void jbt_divicion_actionPerformed(){
-        modelo_operaciones.setNumero1(Float.parseFloat(views_operaciones.jtf_numero1.getText()));
-        modelo_operaciones.setNumero2(Float.parseFloat(views_operaciones.jtf_numero2.getText()));
+        modelo_operaciones.setNumero1(datavalidation.string2Float(views_operaciones.jtf_numero1.getText()));
+        modelo_operaciones.setNumero2(datavalidation.string2Float(views_operaciones.jtf_numero2.getText()));
          modelo_operaciones.divicion();
          views_operaciones.jtf_resultado.setText(String.valueOf(modelo_operaciones.getResultado()));
     }
             public void jbt_porcentaje_actionPerformed(){
-        modelo_operaciones.setNumero1(Float.parseFloat(views_operaciones.jtf_numero1.getText()));
-        modelo_operaciones.setNumero2(Float.parseFloat(views_operaciones.jtf_numero2.getText()));
+        modelo_operaciones.setNumero1(datavalidation.string2Float(views_operaciones.jtf_numero1.getText()));
+        modelo_operaciones.setNumero2(datavalidation.string2Float(views_operaciones.jtf_numero2.getText()));
          modelo_operaciones.porcentaje();
          views_operaciones.jtf_resultado.setText(String.valueOf(modelo_operaciones.getResultado()));
     }

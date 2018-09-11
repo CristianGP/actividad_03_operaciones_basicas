@@ -19,4 +19,26 @@ public class DataValidation {
        }
        return  result;
    }
+    public int string2Float(String value){
+       int result = 0;
+       try {
+           result = (int) Float.parseFloat(value);
+       
+       } catch (NumberFormatException err) {
+           JOptionPane.showMessageDialog(null, "Error al convertir el valor");
+           result = 0;
+       }
+       return  result;
+   }
+        public int string2Double(String value){
+       int result = 0;
+       try {
+           result = (int) Double.parseDouble(value);
+       
+       } catch (NumberFormatException err) {
+           JOptionPane.showMessageDialog(null, "Error al convertir el valor");
+           result = 0;
+       }
+       return  result;
+   }
 }
