@@ -19,6 +19,7 @@ public class DataValidation {
        }
        return  result;
    }
+   
     public int string2Float(String value){
        int result = 0;
        try {
@@ -30,6 +31,7 @@ public class DataValidation {
        }
        return  result;
    }
+    
         public int string2Double(String value){
        int result = 0;
        try {
